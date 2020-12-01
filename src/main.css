@@ -1,0 +1,33 @@
+:root {
+    --color-white: #faf9f9;
+    --color-primary: #89b0ae;
+    --color-primary-dark: #555b6e;
+    --color-primary-light: #bee3db;
+    --color-secondary: #ffd6ba;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+    @apply text-5xl font-sans mb-5 text-primary
+}
+
+.subtitle {
+    @apply text-3xl font-sans uppercase text-primary-dark mb-5 border-b-4 border-primary
+}
+
+.cardtitle {
+    @apply text-2xl font-sans mb-5
+}
+
+p {
+    @apply text-lg font-serif mb-5
+}
+
+.cta-btn {
+    @apply py-2 px-4 mt-5 text-lg font-sans bg-primary-light shadow-md hover:bg-secondary hover:shadow-sm transition border-2 border-secondary rounded-lg tracking-wider uppercase
+}
+.cta-btn-white {
+    @apply bg-white
+}
